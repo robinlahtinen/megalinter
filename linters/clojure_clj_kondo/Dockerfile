@@ -61,7 +61,7 @@ RUN python -c 'import sys; assert sys.version_info >= (3, 14, 7), "Python 3.14.7
 #ARG__START
 ARG TARGETPLATFORM
 ARG TARGETARCH
-# renovate: datasource=github-tags depName=clj-kondo/clj-kondo
+# renovate: datasource=github-tags depName=clj-kondo/clj-kondo versioning=loose extractVersion=^v(?<version>.+)$
 ARG CLJ_KONDO_VERSION=2025.01.16
 
 #ARG__END
